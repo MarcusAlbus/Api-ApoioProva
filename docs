@@ -1,0 +1,91 @@
+# DevCursos — Projeto de estudos JavaScript
+
+Projeto prático de um catálogo de cursos que consome uma API pública e permite pesquisar e filtrar os cursos.
+
+O objetivo é praticar os conceitos de JavaScript estudados para a prova.
+
+## Como executar
+
+1. Baixe ou clone o projeto.
+2. Abra a pasta no VS Code.
+3. Abra o arquivo `index.html` com a extensão Live Server.
+4. A página fará uma requisição para carregar os cursos.
+
+Também é possível abrir o `index.html` diretamente no navegador, mas o Live Server é recomendado.
+
+## API utilizada
+
+**Catálogo de cursos e recursos de programação:**
+
+`https://api.sampleapis.com/codingresources/codingResources`
+
+A API Coding Resources disponibiliza recursos de aprendizado e programação. Os registros incluem informações como descrição e endereço do recurso.
+
+**API auxiliar para testar métodos HTTP:**
+
+`https://jsonplaceholder.typicode.com/posts`
+
+JSONPlaceholder é uma API de testes. Ela simula operações de criação, atualização e exclusão.
+
+## Funcionalidades
+
+- Carregar recursos da API.
+- Exibir cursos em cards.
+- Pesquisar cursos pelo nome.
+- Filtrar cursos por categoria.
+- Limpar os filtros.
+- Mostrar a quantidade de cursos carregados ou encontrados.
+
+## Conceitos JavaScript praticados
+
+| Conceito | Onde aparece |
+|---|---|
+| `const` e `let` | Declaração de variáveis |
+| Strings e arrays | Dados recebidos e campos de pesquisa |
+| Objetos | Cada curso retornado pela API |
+| Funções | Organização das tarefas |
+| Arrow functions | Callbacks dos métodos de array |
+| `if` e `else` | Verificações e condições |
+| `map()` | Criação da lista de categorias |
+| `filter()` | Pesquisa e filtro de cursos |
+| `find()` | Busca do primeiro curso de uma categoria |
+| `forEach()` | Exibição dos cards e categorias |
+| `reduce()` | Contagem de cursos |
+| `fetch()` | Requisições HTTP |
+| `async/await` | Espera da resposta da API |
+| Promises | `then()` e `catch()` |
+| `try/catch/finally` | Tratamento de erros |
+| `JSON.stringify()` | Preparação dos dados enviados |
+| `response.json()` | Conversão da resposta da API |
+| DOM | Criação e alteração de elementos HTML |
+| `addEventListener()` | Eventos de clique, digitação e formulário |
+| GET, POST, PUT, PATCH e DELETE | Métodos HTTP |
+
+## Estrutura do projeto
+
+```text
+guia-cursos-js/
+├── index.html
+├── style.css
+├── app.js
+└── README.md
+```
+
+## Observações para estudo
+
+- `map()` cria um novo array transformado.
+- `filter()` retorna os elementos que atendem a uma condição.
+- `find()` retorna o primeiro elemento encontrado.
+- `forEach()` executa uma ação para cada elemento.
+- `reduce()` acumula valores em um único resultado.
+- `fetch()` retorna uma Promise.
+- `response.json()` também retorna uma Promise.
+- `async` permite utilizar `await` dentro de uma função.
+- `response.ok` permite verificar se a resposta HTTP foi bem-sucedida.
+- `JSON.stringify()` transforma um objeto em string JSON.
+
+## Importante
+
+A API de cursos é utilizada para consulta. Os métodos POST, PUT, PATCH e DELETE estão demonstrados com JSONPlaceholder, pois a API de cursos é voltada à listagem de cursos e não oferece, neste projeto, operações de cadastro e edição.
+
+Este projeto é didático e contém comentários no JavaScript para explicar o funcionamento de cada parte.

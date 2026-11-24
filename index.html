@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCursos | Catálogo de cursos</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- defer faz o JavaScript carregar depois que o HTML for interpretado. -->
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <div class="container">
+            <p class="marca">DevCursos</p>
+            <h1>Encontre seu próximo curso</h1>
+            <p>Um catálogo simples para praticar JavaScript e consumo de APIs.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="painel">
+            <div>
+                <h2>Catálogo de cursos</h2>
+                <p id="mensagem">Clique no botão para carregar os cursos.</p>
+            </div>
+            <button id="buscar-cursos" type="button">Carregar cursos</button>
+        </section>
+
+        <!-- Formulário usado para pesquisar e filtrar os cursos recebidos da API. -->
+        <form id="form-busca" class="filtros">
+            <label for="pesquisa">Pesquisar curso</label>
+            <input id="pesquisa" type="search" placeholder="Ex.: JavaScript, Python...">
+
+            <label for="categoria">Categoria</label>
+            <select id="categoria">
+                <option value="">Todas as categorias</option>
+            </select>
+
+            <button type="submit">Pesquisar</button>
+            <button id="limpar-filtros" class="botao-secundario" type="button">Limpar</button>
+        </form>
+
+        <!-- O JavaScript adicionará os cards dos cursos dentro desta div. -->
+        <section id="lista-cursos" class="grade-cursos" aria-live="polite"></section>
+
+        <section class="bloco-favoritos">
+            <h2>Resumo dos cursos</h2>
+            <p id="resumo">Ainda não existem cursos carregados.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto de estudos JavaScript — consumo de API pública.</p>
+    </footer>
+</body>
+</html>
